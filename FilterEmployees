@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.Linq; // ✅ Eklenmeli
 using System.Text.Json;
 
 public class Solution
@@ -40,9 +40,9 @@ class Program
     {
         var employees = new List<(string, int, string, decimal, DateTime)>
         {
-            ("Ceyda", 30, "IT", 6000m, new DateTime(2018, 5, 1)),
-            ("Zeynep", 35, "Finance", 8500m, new DateTime(2019, 3, 15)),
-            ("Elif", 28, "IT", 7000m, new DateTime(2020, 1, 1))
+            ("Ali", 30, "IT", 6000m, new DateTime(2018, 5, 1)),
+            ("Ayse", 35, "Finance", 8500m, new DateTime(2019, 3, 15)),
+            ("Mehmet", 28, "IT", 7000m, new DateTime(2020, 1, 1))
         };
 
         string result = Solution.FilterEmployees(employees);
